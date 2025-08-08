@@ -7,3 +7,6 @@
 [submodule "project/projects/venn_diagram_web"]
 	path = project/projects/venn_diagram_web
 	url = https://github.com/jakob-bauch-314/venn_diagram_web
+[submodule "project/projects/plotter_web"]
+	path = project/projects/plotter_web
+	url = https://github.com/jakob-bauch-314/plotter_web
