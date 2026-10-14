@@ -8,12 +8,23 @@ const project_index_path = `${project_path}/index.html`
 const project_readme_path = `${project_path}/README.md`
 const project_name = project.split('_').slice(0,-1).join(' ')
 
+
+// button functions
 function reload(){
   document.getElementById('project').src += '';
 }
 
+function fullscreen(){
+  open(`fullscreen.html?project=${project}`);
+}
 
-console.log(project_readme_path)
+function exit_fullscreen(){
+  open(`index.html?project=${project}`);
+}
+
+function back(){
+  open(`../index.html`);
+}
 
 // create html
 $(document).ready(function(){

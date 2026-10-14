@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" type="image/svg" href="../images/skull.svg"/>
+</head>
+<body>
+
+    <embed class="invisible-music" src="music/nyan_cat.mp3" loop="true" autostart="true" volume=5>
+    <div id="fullscreen-project-wrapper">
+        <div class="page-buttons">
+            <div class="page button" onclick="back()">⏴</div>
+        </div>
+        <div class="project-buttons">
+            <div class="project button" onclick="exit_fullscreen()"><img src="icons/exit-full-screen.png"/></div>
+            <div class="page button" onclick="reload()">⟳</div>
+        </div>
+        <iframe id="project"></iframe>
+    </div>
+</body>
+</html>

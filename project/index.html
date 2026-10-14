@@ -20,10 +20,9 @@
     <div class="green horizontal-section-seperator"></div>
 
     <header class="blue-stars">
-        <dif class="buttons">
-            <a href="../index.html"><div class="back button">⏴</div></a>
-            <div class="back button" onclick="reload()">⟳</div>
-        </dif>
+        <div class="page-buttons">
+            <div class="page button" onclick="back()">⏴</div>
+        </div>
         <table><tr><td><div id="title" class="head-line rainbow-text"></div></td></tr></table>
         <div class="flames bottom"></div>
         <div class="flames top"></div>
@@ -32,7 +31,15 @@
     <div class="green horizontal-section-seperator"></div>
 
     <main class="nebula">
-        <iframe id="project"></iframe><div class="green vertical-section-seperator"></div><div id="readme-wrapper"><div id="readme"></div></div>
+        <div id="project-wrapper">
+            <div class="project-buttons">
+                <div class="project button" onclick="fullscreen()"><img src="icons/Fullscreen.svg"/></div>
+                <div class="page button" onclick="reload()">⟳</div>
+            </div>
+            <iframe id="project"></iframe>
+        </div>
+        <div class="green vertical-section-seperator"></div>
+        <div id="readme-wrapper"><div id="readme"></div></div>
     </main>
 
     <div class="green horizontal-section-seperator"></div>

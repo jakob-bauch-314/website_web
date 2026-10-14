@@ -36,14 +36,52 @@ main > table > tbody > tr > td{
     }
 }
 
-.buttons{
+.page-buttons{
     position: absolute;
-    height: 100%;
-    width: 100%;
     left: 40px;
+    top: calc(var(--header-height) / 2);
 }
 
-.back.button{
+#project-wrapper{
+    border: none;
+    height: 100%;
+    width: calc(50vw - 0.5 * var(--seperator-width));
+    display: inline-block;
+    position: relative
+}
+
+#fullscreen-project-wrapper{
+    border: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.project-buttons{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.project.button{
+    position: relative;
+    font-size: calc(var(--button-size) * 0.9);
+    line-height: var(--button-size);
+    outline-width: calc(var(--button-size) / 5);
+    width: var(--button-size);
+    height: var(--button-size);
+    margin-left: calc(var(--button-size) * 0.5);
+    margin-right: calc(var(--button-size) * 0.5);
+    float: left;
+
+    /* center vertically */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.page.button{
     position: relative;
     font-size: calc(var(--button-size) * 0.9);
     line-height: var(--button-size);
@@ -64,7 +102,7 @@ main > table > tbody > tr > td{
 #project{
     border: none;
     height: 100%;
-    width: calc(50vw - 0.5 * var(--seperator-width));
+    width: 100%;
     display: inline-block;
 }
 
