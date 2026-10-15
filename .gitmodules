@@ -10,3 +10,6 @@
 [submodule "project/projects/plotter_web"]
 	path = project/projects/plotter_web
 	url = https://github.com/jakob-bauch-314/plotter_web
+[submodule "project/projects/explorer_web"]
+	path = project/projects/explorer_web
+	url = https://github.com/jakob-bauch-314/explorer_web

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" type="image/svg" href="assets/images/skull.svg"/>
+</head>
+<body>
+
+    <embed class="invisible-music" src="music/nyan_cat.mp3" loop="true" autostart="true" volume=5>
+
+    <div class="green horizontal-section-seperator"></div>
+
+    <header class="blue-stars">
+        <div class="page-buttons">
+            <div class="page button" onclick="back()"><img src="/assets/icons/up-arrow.png"/></div>
+        </div>
+        <table><tr><td><div id="title" class="head-line rainbow-text"></div></td></tr></table>
+        <div class="flames bottom"></div>
+        <div class="flames top"></div>
+    </header>
+
+    <div class="green horizontal-section-seperator"></div>
+
+    <main class="nebula">
+        <div id="project-wrapper">
+            <div class="project-buttons">
+                <div class="project button" onclick="fullscreen()"><img src="/assets/icons/fullscreen.png"/></div>
+                <div class="page button" onclick="reload()"><img src="/assets/icons/reload.png"/></div>
+                <div class="page button" onclick="open_link()"><img src="/assets/icons/open-link.png"/></div>
+            </div>
+            <iframe id="project"></iframe>
+        </div>
+        <div class="green vertical-section-seperator"></div>
+        <div id="readme-wrapper"><div id="readme"></div></div>
+    </main>
+
+    <div class="green horizontal-section-seperator"></div>
+
+</body>
+</html>

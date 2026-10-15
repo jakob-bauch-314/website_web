@@ -1,20 +1,27 @@
 
+
+// button functions
+
+function back(){
+  window.open("../index.html");
+}
+
 states = []
 
 $(document).ready(function(){
 
   $(".trumpet").each(function(index, element){
     states[index] = true;
-    $(element).attr("src", "images/trumpet.png");
+    $(element).attr("src", "/assets/images/trumpet.png");
     $(element).on("click", function(){
       if (states[index]){
         states[index] = false;
-        $(element).attr("src", "images/trumpet.gif");
+        $(element).attr("src", "/assets/images/trumpet.gif");
         setTimeout(function(){
           states[index] = true;
-          $(element).attr("src", "images/trumpet.png");
+          $(element).attr("src", "/assets/images/trumpet.png");
         }, 2250)
-        new Audio("music/honk.mp3").play();
+        new Audio("assets/music/honk.mp3").play();
       }
     })
   });
