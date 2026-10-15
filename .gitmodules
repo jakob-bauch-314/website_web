@@ -1,15 +1,15 @@
-[submodule "project/projects/snake_ai_web"]
-	path = project/projects/snake_ai_web
+[submodule "projects/projects_source/snake_ai_web"]
+	path = projects/projects_source/snake_ai_web
 	url = https://github.com/jakob-bauch-314/snake_ai_web
-[submodule "project/projects/a_star_web"]
-	path = project/projects/a_star_web
+[submodule "projects/projects_source/a_star_web"]
+	path = projects/projects_source/a_star_web
 	url = https://github.com/jakob-bauch-314/a_star_web
-[submodule "project/projects/venn_diagram_web"]
-	path = project/projects/venn_diagram_web
+[submodule "projects/projects_source/venn_diagram_web"]
+	path = projects/projects_source/venn_diagram_web
 	url = https://github.com/jakob-bauch-314/venn_diagram_web
-[submodule "project/projects/plotter_web"]
-	path = project/projects/plotter_web
+[submodule "projects/projects_source/plotter_web"]
+	path = projects/projects_source/plotter_web
 	url = https://github.com/jakob-bauch-314/plotter_web
-[submodule "project/projects/explorer_web"]
-	path = project/projects/explorer_web
+[submodule "projects/projects_source/explorer_web"]
+	path = projects/projects_source/explorer_web
 	url = https://github.com/jakob-bauch-314/explorer_web
