@@ -3,11 +3,10 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const project = urlParams.get('project')
-const project_path = `projects_source/${project}`
+const project_path = `/projects/projects_source/${project}`
 const project_index_path = `${project_path}/index.html`
 const project_readme_path = `${project_path}/README.md`
 const project_name = project.split('_').slice(0,-1).join(' ')
-
 
 // button functions
 function reload(){
@@ -15,24 +14,19 @@ function reload(){
 }
 
 function fullscreen(){
-  open(`project_fullscreen_view.html?project=${project}`);
+  window.open(`large.html?project=${project}`, "_self");
 }
 
 function exit_fullscreen(){
-  open(`project_view.html?project=${project}`);
+  window.open(`small.html?project=${project}`, "_self");
 }
 
 function open_link(){
-  open(`projects_source/${project}`);
-}
-
-function back(){
-  window.open("index.html");
+  window.open(`/projects/projects_source/${project}/index.html`, "_self");
 }
 
 // create html
 $(document).ready(function(){
-
 // parse readme
 fetch(project_readme_path)
   .then(response => response.text())

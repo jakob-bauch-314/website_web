@@ -3,7 +3,7 @@
 // button functions
 
 function back(){
-  window.open("../index.html");
+  window.open("../index.html","_self");
 }
 
 states = []
