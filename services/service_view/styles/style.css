@@ -1,39 +1,10 @@
 
 :root{
+    /*
     --header-height:  calc(25vh - 1.5 * var(--seperator-width)) !important;
     --main-height: calc(75vh - 1.5 * var(--seperator-width)) !important;
     --button-size: min(calc(var(--header-height) * 0.25), 2vw);
-}
-
-/* ===== Header Section ===== */
-
-.invisible-music{
-    display: none;
-}
-
-.headline{
-    display: inline-block;
-}
-
-/* ===== Nav Section ===== */
-
-nav{color: var(--light-text-color);}
-
-/* ===== Main Section ===== */
-
-main > table{
-    width: 100%;
-    height: 100%;
-}
-
-main > table > tbody > tr > td{
-    width: 20%;
-}
-
-@keyframes rainbow{
-    100%{
-        background-position: 300em, 0em;
-    }
+    */
 }
 
 #service-wrapper{
@@ -44,20 +15,13 @@ main > table > tbody > tr > td{
     position: relative
 }
 
-#fullscreen-project-wrapper{
-    border: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.project-buttons{
+.service-buttons{
     position: absolute;
     bottom: 40px;
     right: 40px;
 }
 
-.project.button{
+.service.button{
     position: relative;
     font-size: calc(var(--button-size) * 0.9);
     line-height: var(--button-size);

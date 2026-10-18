@@ -20,4 +20,24 @@ $(document).ready(function(){
   $("title").append(services[service_id].name);
   $("#project").attr("src", services[service_id]);
   document.getElementById('service').src = services[service_id].url;
+
+  // RELOAD
+  $(".button.reload").each(function(index, element){
+    img = $(document.createElement('img'));
+    img.attr('src', "/assets/icons/reload.png");
+    $(element).append(img);
+    $(element).on("click", function(){
+      document.getElementById('service').src += '';
+    })
+  })
+
+  // OPEN BUTTON
+  $(".button.open").each(function(index, element){
+    img = $(document.createElement('img'));
+    img.attr('src', "/assets/icons/open-link.png");
+    $(element).append(img);
+    $(element).on("click", function(){
+      window.open(services[service_id].url, "_self");
+    })
+  })
 })

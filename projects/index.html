@@ -3,7 +3,9 @@
 <head>
     <script src="/scripts/jquery.js"></script>
     <script src="/scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +19,9 @@
     <div class="green horizontal-section-seperator"></div>
 
     <header class="planets">
-        <table>
-            <tr>
-                <td><div class="page-buttons"><div class="page button" onclick="back()"><img src="/assets/icons/up-arrow.png"/></div></div></td>
-                <td>
-                    <div class="head-line rainbow-text">SILLY PROJECTS</div>
-                    <nav>
-                        <a href="https://github.com/jakob-bauch-314">github</a><br>
-                        <a href="https://www.instagram.com/iyeahkob/">instagram</a><br>
-                    </nav>
-                </td>
-                <td><img class="trumpet" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></td>
-            </tr>
-        </table>
+        <div class="header-left"><div class="header-buttons"><div class="header-button button back"></div></div></div>
+        <div class="header-middle"><div class="head-line rainbow-text">SILLY PROJECTS</div></div>
+        <div class="header-right"><img class="trumpet" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></div>
         <div class="flames bottom"></div>
         <div class="flames top"></div>
     </header>
@@ -38,29 +30,8 @@
 
     <main class="blue-stars">
         <div class="flames top"></div>
-        <table>
-            <tr>
-                <td>
-                    <a href="project_view/small.html?project=snake_ai_web"><div class="project button">snake ai</div></a><br>
-                    <a href="project_view/small.html?project=a_star_web"><div class="project button">a star</div></a><br>
-                    <a href="project_view/small.html?project=venn_diagram_web"><div class="project button">venn diagram</div></a><br>
-                    <a href="project_view/small.html?project=plotter_web"><div class="project button">plotter</div></a><br>
-                </td>
-                <td>
-
-                </td>
-                <td>
-                    <div class="skeleton" width=100px height=200px>
-                </td>
-                <td>
-
-                </td>
-                <td>
-
-                </td>
-            </tr>
-        </table>
-    <div class="flames bottom"></div>
+        <div id="cards"></div>
+        <div class="flames bottom"></div>
     </main>
     <div class="green horizontal-section-seperator"></div>
 
