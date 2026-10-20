@@ -10,16 +10,16 @@ function reload(){
 }
 
 function open_link(){
-  window.open(services[service_id].url, "_self");
+  window.open(cards[service_id].url, "_self");
 }
 
 // create html
 $(document).ready(function(){
 
-  $("#title").append(services[service_id].name);
-  $("title").append(services[service_id].name);
-  $("#project").attr("src", services[service_id]);
-  document.getElementById('service').src = services[service_id].url;
+  $("#title").append(cards[service_id].name);
+  $("title").append(cards[service_id].name);
+  $("#project").attr("src", cards[service_id]);
+  document.getElementById('service').src = cards[service_id].url;
 
   // RELOAD
   $(".button.reload").each(function(index, element){
@@ -37,7 +37,7 @@ $(document).ready(function(){
     img.attr('src', "/assets/icons/open-link.png");
     $(element).append(img);
     $(element).on("click", function(){
-      window.open(services[service_id].url, "_self");
+      window.open(cards[service_id].url, "_self");
     })
   })
 })
