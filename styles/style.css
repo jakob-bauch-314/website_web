@@ -145,25 +145,21 @@ header{
 }
 
 .head-line{
-    font-weight: 1000;
-    /*font-size: 60px;*/
-    font-size: min(5vw, 7.5vh);
+    margin: 0px;
+    font-size: calc(var(--header-height)*0.2);
+    line-height: calc(var(--header-height)*0.2);
+    padding-top: calc(var(--header-height)*0.4);
     font-family: 'Epson Pixeled', sans-serif;
-    height: 30%;
-    line-height: calc(var(--header-height)*0.3);
-    position: absolute;
-    top: 20%;
     text-align: center;
     width: 100%;
+    font-weight: 1000;
 }
 
 nav{
     color: var(--light-text-color);
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
     width: 100%;
-    top: 60%;
-    height: 40%;
+    padding-top: calc(var(--header-height)*0.05)
 }
 
 .header-buttons{
@@ -212,6 +208,10 @@ main > table > tbody > tr > td{
 
 a{
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .project.button{

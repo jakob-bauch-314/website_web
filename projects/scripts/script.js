@@ -3,6 +3,10 @@ cards={
     name: "A-Star",
     description: "pathfinding",
   },
+  explorer_web: {
+    name: "File Explorer",
+    description: "File Explorer",
+  },
   plotter_web: {
     name: "Plotter",
     description: "Function Plotter",
